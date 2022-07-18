@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+	<IsEncrypted>N</IsEncrypted>
+	<Username>BTL\kasyoki.justus</Username>
+	<Password>$BTL?@2022/S#</Password>
+	<NavWebService>http://btl-svr-01.btl.local:8007/SBNL/WS/Sundries%20Bargains%20%28Nairobi%29Ltd/Codeunit/TIMSIntegration</NavWebService>
+	<ServiceTimerInterval>10000</ServiceTimerInterval>
+	<Folderpath>D:\Test\</Folderpath>
+	<Uploaded>D:\Test\</Uploaded>
+	<Imagepath>D:\Test\qrcode\</Imagepath>
+	<QRpath>D:\Test\qrcode\</QRpath>
+</Settings>
