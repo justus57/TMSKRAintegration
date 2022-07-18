@@ -23,17 +23,11 @@ namespace TMSKRAintegration
         protected override void OnStart(string[] args)
         {
             Utilities.WriteLog("Service Started");
-
             Timer timer = new Timer();
-
             timer.Elapsed += new System.Timers.ElapsedEventHandler(this._timer_Tick);
-
             timer.Enabled = true;
-
             timer.Interval = 10000;
-
             //timer.Start();
-
             Utilities.GetServiceConstants();
         }
         static string path = AppDomain.CurrentDomain.BaseDirectory + @"\Config.xml";
@@ -82,9 +76,7 @@ namespace TMSKRAintegration
                         {
                             CUIN = line.Substring(line.IndexOf(':') + 1).TrimEnd();
                         }
-
                     }
-
                     var FiscalSeal = invoicelines(Link);
                     var resTSIN = invoicelines(TSIN);
                     var resDate = invoicelines(Date);
@@ -114,9 +106,7 @@ namespace TMSKRAintegration
                     List<string> qr = image.ToList();
                     foreach (var im in qr)
                     {
-
                         dqbase64 = GetBase64StringForImage(im);
-
                         File.Copy(qrpath, im);
                         File.Delete(im);
                     }
